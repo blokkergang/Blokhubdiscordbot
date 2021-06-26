@@ -72,7 +72,7 @@ bot.on("ready", async () => {
  
     console.log(`${bot.user.username} is online.`);
  
-    bot.user.setActivity("Cooming soon", { type: "PLAYING" });
+    bot.user.setActivity("Cooming soonn", { type: "PLAYING" });
  
 });
  
