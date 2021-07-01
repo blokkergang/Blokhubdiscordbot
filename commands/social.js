@@ -4,7 +4,7 @@ module.exports.run = async(bot, message, args) =>{
 
     var serverEmbed = new discord.MessageEmbed()
     .setTitle("Social media")
-    .setDescription("dit zijn de social media's van Blokhub/owner(s).")
+    .setDescription("these are the social media of Blokhub/owner(s).")
     .setColor("#76c914")
     .addFields(
         {name: "yt", value:"https://www.youtube.com/channel/UCEY2X_6WbDER9R_fVRvNmzA/about?view_as=subscriber"},

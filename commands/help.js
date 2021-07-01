@@ -13,6 +13,7 @@ module.exports.run = async(bot, message, args) =>{
         {name: "!social", value:"In it you can see all social media from blokhub or from one of the owners"},
         {name: "!yt", value:"Here you see the yt channel of blokhub."},
         {name: "!help_ticket", value:"Here you can see how to create a ticket."},
+        {name: "!suggestion", value:"then you can make a suggestion"},
     )
 return message.channel.send(serverEmbed);
 

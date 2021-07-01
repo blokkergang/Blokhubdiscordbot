@@ -3,22 +3,22 @@ const discord = require("discord.js");
 module.exports.run = async(bot, message, args) =>{
 
     var serverEmbed = new discord.MessageEmbed()
-    .setTitle("Info voor tickets.")
-    .setDescription("Hier zie je wat in info staan voor de tickets. Doe !ticket in het commands kanaal om een ticket aantemaken.")
+    .setTitle("Info for tickets.")
+    .setDescription("Here you can see what information is for the tickets. Put !ticket in the commands channel to create a ticket.")
     .setColor("#76c914")
-    .addField('regel:', 'geen staff taggen', true)
-    .addField('regel:', 'geen tags gebruiken', true)
-    .addField('regel:', 'geen onnodige tickets maken ', true)
+    .addField('rule:', 'dont tag staff', true)
+    .addField('rule:', 'dont use tags', true)
+    .addField('rule:', 'dont make unnecessary tickets', true)
 	.addFields(
-		{ name: 'vragen stellen', value: 'Als je vragen hebt mag je ze zeker stellen in een ticket en dan zullen we het meestal wel beantwoorden.' },
-		{ name: 'bug/glitches', value: 'Als je een bug/glitches heb gevonden mag je ze in een ticket achterlaten en dan zullen de devs kijken of het kan gefixst worden.' },
-		{ name: 'rank vragen', value: 'Als ze een beplaat rankt wild mag je een ticket aan maken voor meer info.'},
-		{ name: 'ideeen', value: 'Als je leuke ideeen hebt maak niet uit voor wat mag je een ticket maken en dan mag je het voorstellen.'},
-		{ name: 'unban', value: 'Als je gebant bent of vragen hebt over je ban of van iemand of als je perongelijk gebant bent mag je een ticket aanmaken.'},
-		{ name: 'klachten', value: 'Als je iemand wild aanklagen maak niet uit voor wat dan mag je een ticket aanmaken en dan zullen de owners kijken wat er mogenlijk is.'},
-		{ name: 'hulp', value: 'Als je hulp bij iets moet helpen of je snapt iets niet dan kan en mag je een ticket aanmaken en dan zullen wij je verder helpen.'},
+		{ name: 'asking questions', value: 'If you have any questions, you can certainly ask them in a ticket and we will usually answer them.' },
+		{ name: 'bug/glitches', value: 'If you found a bug/glitches you can leave them in a ticket and the devs will see if it can be fixed.' },
+		{ name: 'rank questions', value: 'If she wants a certain rank you can create a ticket for more info.'},
+		{ name: 'ideas', value: 'If you have great ideas, it doesnt matter what you can make a ticket for and you can propose it.'},
+		{ name: 'unban', value: 'If you are banned or have questions about your ban or from someone or if you are banned accidentally, you can create a ticket.'},
+		{ name: 'complaints', value: 'If you want to sue someone, no matter what, you can create a ticket and the owners will see what is allowed.'},
+		{ name: 'help', value: 'If you need help with something or if you dont understand something, you can and may create a ticket and we will help you further.'},
 	)
-    .setFooter("Laast geupdate: ")
+    .setFooter("Last updated: ")
     .setTimestamp()
 
     return message.channel.send(serverEmbed);

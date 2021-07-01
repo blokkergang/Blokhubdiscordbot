@@ -4,10 +4,10 @@ module.exports.run = async(bot, message, args) =>{
 
     var serverEmbed = new discord.MessageEmbed()
     .setTitle("discord info")
-    .setDescription("Dit is de officiale discord server van Blokhub en hier mag je chatten met andere of wat temaken heeft met blokhub mc server. Je mag ook wel chatten buiten om blokhub. Veel plezier in de server.")
+    .setDescription("this is the official discord server of Blokhub and here you can chat with others or what has to do with blokhub mc server. You can also chat outside of blokhub. Have fun in the server.")
     .setColor("#76c914")
-    .addField("Je bent deze server gejoind op", message.member.joinedAt)
-    .addField("Totaal memebers (bots meegetelt)", message.guild.memberCount);
+    .addField("You have joined this server on", message.member.joinedAt)
+    .addField("Total members (bots included)", message.guild.memberCount);
 
 return message.channel.send(serverEmbed);
 
