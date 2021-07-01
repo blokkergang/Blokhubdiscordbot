@@ -3,16 +3,16 @@ const discord = require("discord.js");
 module.exports.run = async(bot, message, args) =>{
 
     var serverEmbed = new discord.MessageEmbed()
-    .setTitle("alle commands")
-    .setDescription("Hier zie je alle commands van de bot")
+    .setTitle("all commands")
+    .setDescription("Here you can see all the commands of the bot")
     .setColor("#76c914")
     .addFields(
-        {name: "!ip", value:"Hier zie de ip van de server."},
-        {name: "!info", value:"Hier in zie je wat info van blokhub"},
-        {name: "!rank", value:"Daarin zie je info staan als je een rank wild"},
-        {name: "!social", value:"Daarin zie je alle social media van blokhub of van een van de owners"},
-        {name: "!yt", value:"Hierin zie je het yt kanaal van blokhub."},
-        {name: "!help_ticket", value:"Hier zie je hoe je een ticket aanmaakt."},
+        {name: "!ip", value:"Here you can see the IP of the server."},
+        {name: "!info", value:"Here you can see some info from blokhub"},
+        {name: "!rank", value:"In it you will see info if you want a rank"},
+        {name: "!social", value:"In it you can see all social media from blokhub or from one of the owners"},
+        {name: "!yt", value:"Here you see the yt channel of blokhub."},
+        {name: "!help_ticket", value:"Here you can see how to create a ticket."},
     )
 return message.channel.send(serverEmbed);
 
