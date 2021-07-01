@@ -14,7 +14,7 @@ module.exports.run = async(bot, message, args) =>{
         if (channel.name == userName.toLowerCase() + "-" + userDiscriminator) {
             ticketBestaat = true;
  
-            message.reply("Je hebt al een ticket aangemaakt");
+            message.reply("You have already created a ticket");
  
             return;
         }
@@ -24,8 +24,8 @@ module.exports.run = async(bot, message, args) =>{
     if (ticketBestaat) return;
  
     var embed = new discord.MessageEmbed()
-        .setTitle("Hallo " + message.author.username)
-        .setFooter("Support kanaal wordt aangemaakt")
+        .setTitle("Hello " + message.author.username)
+        .setFooter("Support channel is being created")
         .setColor("#76c914");
  
     message.channel.send(embed);
@@ -64,9 +64,9 @@ module.exports.run = async(bot, message, args) =>{
                     });
  
                     var embedParent = new discord.MessageEmbed()
-                        .setTitle(`Hallo, welkom in deze ticket ${message.author.username}`)
-                        .setDescription("Zet hier uw bericht of vraag, gelief het supoort team niet te taggen. Zie hier onderaan wat je wel en niet mag vragen.")
-                        .setFooter("Hier mag uw vragen stellen, klachten typen, hulp, unban, ideeen ectra")
+                        .setTitle(`Hello, welcome to this ticket ${message.author.username}`)
+                        .setDescription("Put your message or question here, please do not tag the support team. See below what you can and cannot ask.")
+                        .setFooter("Here you can ask questions, type complaints, help, unban, ideas etc")
                         .setColor("#76c914");
 
  
@@ -74,11 +74,11 @@ module.exports.run = async(bot, message, args) =>{
  
                 }
             ).catch(err => {
-                message.channel.send("Er is iets misgelopen");
+                message.channel.send("Something went wrong");
             });
         }
     ).catch(err => {
-        message.channel.send("Er is iets misgelopen");
+        message.channel.send("Something went wrong");
     });
 }
 
