@@ -3,7 +3,7 @@ const discord = require("discord.js");
 module.exports.run = async(bot, message, args) =>{
 
     var serverEmbed = new discord.MessageEmbed()
-    .setTitle("Info for tickets.")
+    .setTitle("**English** Info for tickets.")
     .setDescription("Here you can see what information is for the tickets. Put !ticket in the commands channel to create a ticket.")
     .setColor("#76c914")
     .addField('rule:', 'dont tag staff', true)
